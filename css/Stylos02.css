@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal {
+  background-color: #ffffff;
+  width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+}
+
+.principal h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+form textarea {
+  height: 120px;
+  resize: none; /* no se puede deformar */
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.6);
+}
+
+/* Botón con efecto 3D */
+.btn-enviar {
+  width: 100%;
+  background-color: #2ecc71;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  cursor: pointer;
+  box-shadow: 0 6px 0 #239b56; /* base inferior verde oscura */
+  transition: all 0.1s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #27ae60;
+}
+
+.btn-enviar:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #239b56;
+}
